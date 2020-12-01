@@ -83,7 +83,8 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/openwrt-packages.git package/lienol
+        git clone https://github.com/kenzok8/openwrt-packages.git package/kenzok8
+        git clone https://github.com/kenzok8/small.git package/small
     #    git clone "your_github_link" package/"your_folder_name"      
 
     - name: Configuration Customization - Build_x86_64
